@@ -2,6 +2,8 @@ FROM php:8.1-apache
 
 # Instalar extensiones necesarias
 RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    pkg-config \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
